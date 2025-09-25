@@ -1,6 +1,16 @@
-
+import os
+import json
+from game.state import GameState, Player
 
 def start_game(slot=None):
+    print("Starting a new game...")
+    print("Welcome to the Text Adventure Game!")
+    # Initialize game state and player
+    game_state = GameState()
+    player = Player("Hero")
+    game_state.player = player
+    game_state.current_room = "Starting Room"
+    print("Game initialized.")
     # Function implementation goes here
     pass
 
@@ -43,4 +53,3 @@ def combat(enemy):
 def run_away():
     # Function implementation goes here
     pass
-    

@@ -62,5 +62,90 @@
                 "type": "magic"
             }
         ]
-    }
+    },
+    "armors": [
+        {
+            "name": "leather_armor",
+            "defense": "<defense_placeholder>",
+            "weight": "<weight_placeholder>",
+            "type": "light"
+        },
+        {
+            "name": "chainmail_armor",
+            "defense": "<defense_placeholder>",
+            "weight": "<weight_placeholder>",
+            "type": "medium"
+        },
+        {
+            "name": "plate_armor",
+            "defense": "<defense_placeholder>",
+            "weight": "<weight_placeholder>",
+            "type": "heavy"
+        }
+    ],
+    "consumables": [
+        {
+            "name": "health_potion",
+            "effect": {
+                "health_restore": 50
+            },
+            "duration": "instant"
+        },
+        {
+            "name": "mana_potion",
+            "effect": {
+                "mana_restore": 30
+            },
+            "duration": "instant"
+        },
+        {
+            "name": "strength_elixir",
+            "effect": {
+                "strength_boost": 10
+            },
+            "duration": "5_turns"
+        },
+        {
+            "name": "agility_elixir",
+            "effect": {
+                "agility_boost": 10
+            },
+            "duration": "5_turns"
+        },
+        {
+            "name": "defense_elixir",
+            "effect": {
+                "defense_boost": 10
+            },
+            "duration": "5_turns"
+        },
+        {
+            "name": "fire_resistance_potion",
+            "effect": {
+                "fire_resistance": 20
+            },
+            "duration": "10_turns"
+        },
+        {
+            "name": "ice_resistance_potion",
+            "effect": {
+                "ice_resistance": 20
+            },
+            "duration": "10_turns"
+        },
+        {
+            "name": "poison_antidote",
+            "effect": {
+                "cure_poison": true
+            },
+            "duration": "instant"
+        },
+        {
+            "name": "resurrection_feather",
+            "effect": {
+                "can_save": true
+            },
+            "duration": "instant"
+        }
+    ]
 }

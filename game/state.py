@@ -1,7 +1,9 @@
-
+import os
+import json
 
 class GameState:
     def __init__(self):
+        self.turn = 0
         self.current_room = None
         self.enemies = []
 
@@ -45,6 +47,7 @@ class Player:
         }
         self.level = 1
         self.experience = 0
+        self.can_save = True
         self.state = GameState()
 
     def get_player_info(self):
@@ -87,6 +90,12 @@ class Player:
     def remove_item(self, item):
         if item in self.items:
             self.items.remove(item)
+
+    def can_save(self):
+        return self.can_save
+
+    def set_can_save(self, value):
+        self.can_save = value
 
 class Enemy:
     def __init__(self, name, health, attack_power):
