@@ -1,0 +1,66 @@
+{
+    "weapons": {
+        "close_combat": [
+            {
+                "name": "short_sword",
+                "damage": "<damage_placeholder>",
+                "range": "<range_placeholder>",
+                "handed": "<1_or_2_handed>",
+                "type": "slash"
+            },
+            {
+                "name": "long_sword",
+                "damage": "<damage_placeholder>",
+                "range": "<range_placeholder>",
+                "handed": "<1_or_2_handed>",
+                "type": "slash"
+            },
+            {
+                "name": "speer",
+                "damage": "<damage_placeholder>",
+                "range": "<range_placeholder>",
+                "handed": "<1_or_2_handed>",
+                "type": "pierce"
+            }
+        ],
+        "range_combat": [
+            {
+                "name": "bow",
+                "damage": "<damage_placeholder>",
+                "range": "<range_placeholder>",
+                "handed": "<1_or_2_handed>",
+                "type": "pierce"
+            },
+            {
+                "name": "sling",
+                "damage": "<damage_placeholder>",
+                "range": "<range_placeholder>",
+                "handed": "<1_or_2_handed>",
+                "type": "pierce"
+            },
+            {
+                "name": "crossbow",
+                "damage": "<damage_placeholder>",
+                "range": "<range_placeholder>",
+                "handed": "<1_or_2_handed>",
+                "type": "pierce"
+            }
+        ],
+        "magic_combat": [
+            {
+                "name": "wand",
+                "damage": "<damage_placeholder>",
+                "range": "<range_placeholder>",
+                "handed": "<1_or_2_handed>",
+                "type": "magic"
+            },
+            {
+                "name": "staff",
+                "damage": "<damage_placeholder>",
+                "range": "<range_placeholder>",
+                "handed": "<1_or_2_handed>",
+                "type": "magic"
+            }
+        ]
+    }
+}

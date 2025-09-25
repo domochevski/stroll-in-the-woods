@@ -1,0 +1,41 @@
+[
+    {
+        "type": "small",
+        "name": "MonsterNamePlaceholder",
+        "damage": {
+            "physical": 10,
+            "magic": 5
+        },
+        "ability": ["spite", "byte"],
+        "weakness": ["physical"],
+        "health": 30,
+        "agility": 15,
+        "strength": 8
+    },
+    {
+        "type": "large",
+        "name": "MonsterNamePlaceholder",
+        "damage": {
+            "physical": 25,
+            "magic": 10
+        },
+        "ability": ["stomp", "clow"],
+        "weakness": ["magic"],
+        "health": 80,
+        "agility": 7,
+        "strength": 25
+    },
+    {
+        "type": "gorgentious",
+        "name": "MonsterNamePlaceholder",
+        "damage": {
+            "physical": 40,
+            "magic": 35
+        },
+        "ability": ["breathe", "stomp", "clow"],
+        "weakness": ["elemental", "magic"],
+        "health": 150,
+        "agility": 12,
+        "strength": 40
+    }
+]
