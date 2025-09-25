@@ -1,0 +1,29 @@
+{
+    "rooms": [
+        {
+            "type": "hall",
+            "size": "big",
+            "doors": ["north", "south", "east", "west"]
+        },
+        {
+            "type": "room",
+            "size": "medium",
+            "doors": ["north", "east"]
+        },
+        {
+            "type": "armory",
+            "size": "small",
+            "doors": ["west", "south"]
+        },
+        {
+            "type": "throne hall",
+            "size": "big",
+            "doors": ["north", "south"]
+        },
+        {
+            "type": "treasury",
+            "size": "small",
+            "doors": ["east"]
+        }
+    ]
+}
