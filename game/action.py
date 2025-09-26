@@ -1,6 +1,6 @@
 import os
 import json
-from game.state import GameState, Player
+from game.state import *
 
 def start_game(slot=None):
     print("Starting a new game...")
@@ -8,11 +8,16 @@ def start_game(slot=None):
     # Initialize game state and player
     game_state = GameState()
     player = Player("Hero")
+    # Load initial room
+    room = Room(name = "Starting Room",
+                description =  "This is the room where your adventure begins.",
+                size="small",
+                room_type="starting room",
+                doors={"North": True, "East": True, "South": False, "West": True})
     game_state.player = player
-    game_state.current_room = "Starting Room"
+    game_state.current_room = room
     print("Game initialized.")
-    # Function implementation goes here
-    pass
+    print(f"You are in {room.name}. {room.description}")
 
 def load_game(slot):
     # Function implementation goes here

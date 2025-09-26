@@ -1,29 +1,28 @@
 {
     "rooms": [
         {
+            "type": "starting room",
+            "size": "small"
+        },
+        {
             "type": "hall",
-            "size": "big",
-            "doors": ["north", "south", "east", "west"]
+            "size": "big"
         },
         {
             "type": "room",
-            "size": "medium",
-            "doors": ["north", "east"]
+            "size": "medium"
         },
         {
             "type": "armory",
-            "size": "small",
-            "doors": ["west", "south"]
+            "size": "small"
         },
         {
             "type": "throne hall",
-            "size": "big",
-            "doors": ["north", "south"]
+            "size": "big"
         },
         {
             "type": "treasury",
-            "size": "small",
-            "doors": ["east"]
+            "size": "small"
         }
     ]
 }

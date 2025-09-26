@@ -10,6 +10,8 @@ def main(argv=None):
         action.load_game(argv[2])
     else:
         action.start_game()
+    
+
 
 
 

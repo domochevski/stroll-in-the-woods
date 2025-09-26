@@ -6,6 +6,7 @@ class GameState:
         self.turn = 0
         self.current_room = None
         self.enemies = []
+        self.map = {}
 
     def save(self, slot):
         # Save the game state to a file or database
@@ -17,14 +18,14 @@ class GameState:
     def update_room(self, room):
         self.current_room = room
 
-    def update_inventory(self, item):
-        self.inventory.append(item)
-
-    def update_health(self, amount):
-        self.health += amount
+    def update_map(self, map_data):
+        self.map = map_data
 
     def update_enemies(self, enemy):
         self.enemies.append(enemy)
+
+    def update_turn(self):
+        self.turn += 1
 
     def get_state(self):
         return {
@@ -115,12 +116,14 @@ class Enemy:
         player.take_damage(self.attack_power)
 
 class Room:
-    def __init__(self, name, description):
+    def __init__(self, name, description, size=None, room_type=None, doors={"North": False, "East": False, "South": False, "West": False}):
         self.name = name
+        self.size = size
+        self.type = room_type
         self.description = description
         self.enemies = []
         self.items = []
-        self.exits = {}
+        self.doors = doors
 
     def add_enemy(self, enemy):
         self.enemies.append(enemy)
